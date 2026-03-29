@@ -14,7 +14,10 @@ Rust製NESエミュレータ。Raspberry Pi 4 + SDL2がターゲット。
 - 描画: SDL2 (`sdl2` crate)
 - ターゲット: Raspberry Pi 4 (クロスコンパイル) / macOS (開発用)
 
-## コード規約
+## ドキュメント
 
-- 各コンポーネント (cpu, ppu, apu, bus, cartridge) はモジュール分離
-- NES固有の技術情報は `docs/` 配下を参照
+- `docs/development-guide.md` — 実装方針、テスト戦略、ブランチ運用、コード規約
+- `docs/project-structure.md` — モジュール構成、責務、データフロー
+- `docs/nes-architecture.md` — CPU レジスタ、メモリマップ、アドレッシングモード
+- `docs/cpu-instructions.md` — 6502全命令オペコード表、サイクル数、実装注意点
+- `docs/ppu.md` / `docs/apu.md` / `docs/cartridge.md` / `docs/controller.md` — 各コンポーネント仕様
